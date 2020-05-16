@@ -1,10 +1,7 @@
-function add(param1: number, param2: number): number {
-	return param1 + param2;
-}
+const add = (param1: number, param2: number): number => param1 + param2;
 
-function add2(...param1: number[]): number {
-	return param1.reduce((tot: number, num: number) => tot + num);
-}
+const add2 = (...param1: number[]): number =>
+	param1.reduce((tot: number, num: number) => tot + num);
 
 console.log(add(1, 2));
 console.log(add(3, 2));
