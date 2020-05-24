@@ -1,5 +1,9 @@
 function centuryFromYear(year: number): number {
-	return Math.floor(year / 100) + 1;
+	if (year % 100 === 0) {
+		return year / 100;
+	} else {
+		return Math.floor(year / 100 + 1);
+	}
 }
 
 console.log(centuryFromYear(1905));

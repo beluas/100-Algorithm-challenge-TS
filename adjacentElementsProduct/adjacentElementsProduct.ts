@@ -1,14 +1,15 @@
-function adjacentElementsProduct(arr: number[]): number {
-	let sum = 0;
-	let tempSum = 0;
-	for (let i = 0; i < arr.length; i++) {
-		tempSum = arr[i] * arr[i + 1];
-		if (tempSum > sum) {
-			sum = tempSum;
+function adjacentElementsProduct(inputArray: number[]): number {
+	let maxProd = -100000;
+
+	for (let i = 0; i < inputArray.length; i++) {
+		if (inputArray[i + 1]) {
+			if (inputArray[i] * inputArray[i + 1] > maxProd) {
+				maxProd = inputArray[i] * inputArray[i + 1];
+			}
 		}
 	}
 
-	return sum;
+	return maxProd;
 }
 
 console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3]));
