@@ -1,5 +1,4 @@
 function allLongestStrings(inputArray) {
-	let strArr = [];
 	let maxLength = Math.max(inputArray);
 
 	for (let i = 0; i < inputArray.length; i++) {
@@ -8,7 +7,7 @@ function allLongestStrings(inputArray) {
 		}
 	}
 
-	strArr = inputArray.filter((el) => el.length === maxLength);
+	return inputArray.filter((el) => el.length === maxLength);
 }
 
 console.log(
