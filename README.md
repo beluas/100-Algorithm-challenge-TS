@@ -1,4 +1,4 @@
-# 100-Algorithm-challenge-TS
+# 100-Algorithm-challenge-TS/JS
 
 100 Algorithms challenge using Typescript
 
